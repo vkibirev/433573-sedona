@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона Выбор Отеля</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img src="http://placehold.it/130x130" width="130" height="130" alt="Логотип сайта Седона">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и Видео</a></li>
+          <li><a href="#">Карта Штата</a></li>
+          <li><a href="#">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <form class="filter" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <ul class="filters-list">
+            <li class="filter-item">
+              <label>
+                <input class="checkbox" type="checkbox" name="pool" checked>
+                Бассейн
+              </label>
+            </li>
+            <li class="filter-item">
+              <label>
+                <input class="checkbox" type="checkbox" name="parking">
+                Парковка
+              </label>
+            </li>
+            <li class="filter-item">
+              <label>
+                <input class="checkbox" type="checkbox" name="wifi">
+                Wi-Fi
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Тип Жилья:</legend>
+          <ul class="filters-list">
+            <li class="filter-item">
+              <label>
+                <input class="checkbox" type="checkbox" name="hotel" checked>
+                Гостиница
+              </label>
+            </li>
+            <li class="filter-item">
+              <label>
+                <input class="checkbox" type="checkbox" name="motel" checked>
+                Мотель
+              </label>
+            </li>
+            <li class="filter-item">
+              <label>
+                <input class="checkbox" type="checkbox" name="apart" checked>
+                Апартаменты
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <p>Стоимость услуги в сутки(Р):</p>
+        <div class="price">
+          <input type="number" name="minprice" placeholder="0">
+          <input type="number" name="maxprice" placeholder="3000">
+        </div>
+        <div class="range-price">
+          <input type="range" min="0" max="3000" step="1" name="pricerange">  <!-- Вот тут я не понял как реализовать multiple range-->
+        </div>
+        <p>
+          <button class="button">Показать</button>
+        </p>
+      </form>
+      <section class="results">
+        <h2>Найдено: 3</h2>
+        <form class="filter-results" action="https://echo.htmlacademy.ru" method="post">
+          <p>Сортировка:</p>
+          <ul class="filter-results-list">
+            <li class="filter-results-item"><button class="results-button">По цене</button></li>
+            <li class="filter-results-item"><button class="results-button">По типу</button></li>
+            <li class="filter-results-item"><button class="results-button">По рейтингу</button></li>
+          </ul>
+          <ul class="sort-buttons">
+            <li class="sort-buttons-item"><button>up</button></li>
+            <li class="sort-buttons-item"><button>down</button></li>
+          </ul>
+        </form>
+      </section>
+    <section class="hotels">
+      <ul class="hotels-list">
+        <li class="hotels-lits-item">
+          <p><img src="http://placehold.it/70x30" width="70" height="30" alt="Фото отеля 1"></p>
+          <b>Amara Resort &amp; SPA</b>
+          <p>Гостиница</p>
+          <p>от 4000 Р.</p>
+          <a href="#">Подробнее</a>
+          <a href="#">Забронировать</a>
+          <span class="rating">Рейтинг 8.5</span>
+          <img src="http://placehold.it/70x30" width="70" height="15" alt="5 звёзд">
+        </li>
+        <li class="hotels-lits-item">
+          <p><img src="http://placehold.it/70x30" width="70" height="30" alt="Фото мотеля"></p>
+          <b>Desert Qual Inn</b>
+          <p>Мотель</p>
+          <p>от 3000 Р.</p>
+          <a href="#">Подробнее</a>
+          <a href="#">Забронировать</a>
+          <span class="rating">Рейтинг 8.9</span>
+          <img src="http://placehold.it/70x30" width="70" height="15" alt="3 звёзды">
+        </li>
+        <li class="hotels-lits-item">
+          <p><img src="http://placehold.it/70x30" width="70" height="30" alt="Фото Виллы"></p>
+          <b>Villas at Poco Diablo</b>
+          <p>Апартаменты</p>
+          <p>от 2000 Р.</p>
+          <a href="#">Подробнее</a>
+          <a href="#">Забронировать</a>
+          <span class="rating">Рейтинг 9.2</span>
+          <img src="http://placehold.it/70x30" width="70" height="15" alt="2 звёзды">
+        </li>
+      </ul>
+    </section>
+    </main>
+    <footer class="main-footer">
+      <p class="footer-hashtag">#visitsedona</p>
+      <div class="footer-social">
+        <ul>
+          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Инстаграм</a></li>
+        </ul>
+      </div>
+      <p class="footer-copyright">
+        <b>Web site by</b>
+        <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+      </p>
+
+    </footer>
+  </body>
+</html>
