@@ -7,62 +7,50 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
+        <a class="main-header-logo" href="index.html">
           <img src="http://placehold.it/130x130" width="130" height="130" alt="Логотип сайта Седона">
         </a>
         <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и Видео</a></li>
-          <li><a href="#">Карта Штата</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><a href="#">Карта штата</a></li>
           <li><a href="#">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
     <main class="container">
-      <form class="filter" action="https://echo.htmlacademy.ru" method="post">
+      <form class="filter" action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
           <legend>Инфраструктура:</legend>
           <ul class="filters-list">
             <li class="filter-item">
-              <label>
-                <input class="checkbox" type="checkbox" name="pool" checked>
-                Бассейн
-              </label>
+                <input class="checkbox" type="checkbox" name="pool" id="pool" checked>
+                <label for="pool">Бассейн</label>
             </li>
             <li class="filter-item">
-              <label>
-                <input class="checkbox" type="checkbox" name="parking">
-                Парковка
-              </label>
+                <input class="checkbox" type="checkbox" name="parking" id="parking">
+                <label for="parking">Парковка</label>
             </li>
             <li class="filter-item">
-              <label>
-                <input class="checkbox" type="checkbox" name="wifi">
-                Wi-Fi
-              </label>
+                <input class="checkbox" type="checkbox" name="wifi" id="wifi">
+                <label for="wifi">Wi-Fi</label>
             </li>
           </ul>
         </fieldset>
         <fieldset>
-          <legend>Тип Жилья:</legend>
+          <legend>Тип жилья:</legend>
           <ul class="filters-list">
             <li class="filter-item">
-              <label>
-                <input class="checkbox" type="checkbox" name="hotel" checked>
-                Гостиница
-              </label>
+              <input class="checkbox" type="checkbox" name="hotel" id="hotel" checked>
+              <label for="hotel">Гостиница</label>
             </li>
             <li class="filter-item">
-              <label>
-                <input class="checkbox" type="checkbox" name="motel" checked>
-                Мотель
-              </label>
+              <input class="checkbox" type="checkbox" name="motel" id="motel" checked>
+              <label for="motel">Мотель</label>
             </li>
             <li class="filter-item">
-              <label>
-                <input class="checkbox" type="checkbox" name="apart" checked>
-                Апартаменты
-              </label>
+              <input class="checkbox" type="checkbox" name="apart" id="apart" checked>
+              <label for="apart">Апартаменты</label>
             </li>
           </ul>
         </fieldset>
@@ -79,8 +67,7 @@
         </p>
       </form>
       <section class="results">
-        <h2>Найдено: 3</h2>
-        <form class="filter-results" action="https://echo.htmlacademy.ru" method="post">
+        <b>Найдено: 3</b>
           <p>Сортировка:</p>
           <ul class="filter-results-list">
             <li class="filter-results-item"><button class="results-button">По цене</button></li>
@@ -88,16 +75,15 @@
             <li class="filter-results-item"><button class="results-button">По рейтингу</button></li>
           </ul>
           <ul class="sort-buttons">
-            <li class="sort-buttons-item"><button>up</button></li>
-            <li class="sort-buttons-item"><button>down</button></li>
+            <li class="sort-buttons-item"><button>▲</button></li>
+            <li class="sort-buttons-item"><button>▼</button></li>
           </ul>
-        </form>
       </section>
     <section class="hotels">
       <ul class="hotels-list">
         <li class="hotels-lits-item">
-          <p><img src="http://placehold.it/70x30" width="70" height="30" alt="Фото отеля 1"></p>
-          <b>Amara Resort &amp; SPA</b>
+          <img src="http://placehold.it/70x30" width="70" height="30" alt="Фото отеля 1">
+          <h3>Amara Resort &amp; SPA</h3>
           <p>Гостиница</p>
           <p>от 4000 Р.</p>
           <a href="#">Подробнее</a>
@@ -106,8 +92,8 @@
           <img src="http://placehold.it/70x30" width="70" height="15" alt="5 звёзд">
         </li>
         <li class="hotels-lits-item">
-          <p><img src="http://placehold.it/70x30" width="70" height="30" alt="Фото мотеля"></p>
-          <b>Desert Qual Inn</b>
+          <img src="http://placehold.it/70x30" width="70" height="30" alt="Фото мотеля">
+          <h3>Desert Qual Inn</h3>
           <p>Мотель</p>
           <p>от 3000 Р.</p>
           <a href="#">Подробнее</a>
@@ -116,8 +102,8 @@
           <img src="http://placehold.it/70x30" width="70" height="15" alt="3 звёзды">
         </li>
         <li class="hotels-lits-item">
-          <p><img src="http://placehold.it/70x30" width="70" height="30" alt="Фото Виллы"></p>
-          <b>Villas at Poco Diablo</b>
+          <img src="http://placehold.it/70x30" width="70" height="30" alt="Фото Виллы">
+          <h3>Villas at Poco Diablo</h3>
           <p>Апартаменты</p>
           <p>от 2000 Р.</p>
           <a href="#">Подробнее</a>
@@ -129,7 +115,7 @@
     </section>
     </main>
     <footer class="main-footer">
-      <p class="footer-hashtag">#visitsedona</p>
+      <a class="footer-hashtag" href="#">#visitsedona</a>
       <div class="footer-social">
         <ul>
           <li><a class="social-button" href="#">Вконтакте</a></li>
@@ -139,7 +125,7 @@
       </div>
       <p class="footer-copyright">
         <b>Web site by</b>
-        <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+        <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
       </p>
 
     </footer>
