@@ -1,133 +1,131 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-    <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img src="http://placehold.it/130x130" width="130" height="130" alt="Логотип сайта Седона">
-        </a>
-        <ul class="site-navigation">
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="sedona-hotels.html">Гостиницы</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main class="container">
-      <!-- Если я правильно тебя понял, то блоки с изображениями я удаляю и потом просто их добавлю как фон через CSS-->
-      <section class="advantages">
-        <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
-        <p class="reasons-head">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-      </section>
-      <section class="first-advantage">
-        <div class="about-advantage">
-          <h2>Настоящий городок</h2>
-          <span>№1</span>
-          <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
-        </div>
-          <img src="http://placehold.it/800x300" width="800" height="300" alt="Фото города">
-        <ul class="first-advantages-list">
-          <li class="first-advantages-item">
-              <img src="http://placehold.it/50x70" width="50" height="70" alt="Домик">
-              <b>Жильё</b>
-            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-          </li>
-          <li class="first-advantages-item">
-              <img src="http://placehold.it/50x70" width="50" height="70" alt="Бургер">
-              <b>Еда</b>
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-          </li>
-          <li class="first-advantages-item">
-              <img src="http://placehold.it/50x70" width="50" height="70" alt="Подарок">
-              <b>Сувениры</b>
-            <p>Не только китайского, но и местного производства!</p>
-          </li>
-        </ul>
-      </section>
-      <section class="second-advantage">
-        <div class="about-advantage">
-          <h2>Там есть мост Дьявола</h2>
-          <span>№2</span>
-          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-        </div>
-          <img src="http://placehold.it/800x300" width="800" height="300" alt="Фото каньона">
-      </section>
-      <section class="other-advantages">
-        <ul class="other-advantages-list">
-          <li class="other-advantages-item">
-            <h3>Небольшая площадь</h3>
-            <span>№3</span>
-            <p>Все достопримечательности находятся очень близко</p>
-          </li>
-          <li class="other-advantages-item">
-            <h3>Красивая дорога</h3>
-            <span>№4</span>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
-          </li>
-          <li class="other-advantages-item">
-            <h3>Мало туристов</h3>
-            <span>№5</span>
-            <p>Большинство едет в Гранд-Каньон и толпится там</p>
-          </li>
-        </ul>
-      </section>
-      <section class="finder">
-        <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="open-form" href="#">Поиск гостиницы в Седоне</a>
-        <form class="find-hotel-form" action="https://echo.htmlacademy.ru" method="post">
-          <p class="find-form-item">
-            <label for="checkindate">Дата заезда</label>
-              <input type="date" name="checkindate" id="checkindate">
-              <i class="icon icon-calendar"></i>
-            </p>
-          <p class="find-form-item">
-            <label for="checkoutdate">Дата выезда</label>
-              <input type="date" name="checkoutdate" id="checkoutdate">
-              <i class="icon icon-calendar"></i>
-          </p>
-          <p class="find-form-item">
-            <label for="adultscount">Взрослые</label>
-              <button class="button button-minus">&minus;</button>
-              <input type="number" name="adultscount" id="adultscount" placeholder="2">
-              <button class="button button-plus">+</button>
-            </p>
-          <p class="find-form-item">
-            <label for="kidscount">Дети</label>
-              <button class="button button-minus">&minus;</button>
-              <input type="number" name="kidscount" id="kidscount" placeholder="0">
-              <button class="button button-plus">+</button>
-            </p>
-        </form>
-      </section>
-      <section class="map">
-        <iframe
-        width="1200"
-        height="450"
-        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJDbBC-TKhLYcR_Y5s-iPFSFU&key=AIzaSyCPx0wdTEhMR_c1UrUcgv9aYSYnjaMcvEQ"
-        allowfullscreen>
-        </iframe>
-      </section>
-    </main>
-    <footer class="main-footer">
-      <a class="footer-hashtag" href="#">#visitsedona</a>
-      <div class="footer-social">
-        <ul>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
-        </ul>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+<body>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo">
+        <img src="http://placehold.it/130x130" width="130" height="130" alt="Логотип сайта Седона">
+      </a>
+      <ul class="site-navigation">
+        <li><a href="#">Информация</a></li>
+        <li><a href="#">Фото и видео</a></li>
+        <li><a href="#">Карта штата</a></li>
+        <li><a href="sedona-hotels.html">Гостиницы</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <!-- Если я правильно тебя понял, то блоки с изображениями я удаляю и потом просто их добавлю как фон через CSS-->
+    <section class="advantages">
+      <h2>Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h2>
+      <p class="reasons-head">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+    </section>
+    <section class="first-advantage">
+      <div class="about-advantage">
+        <h2>Настоящий городок</h2>
+        <span>№1</span>
+        <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
       </div>
-      <p class="footer-copyright">
-        <b>Web site by</b>
-        <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-      </p>
+      <ul class="first-advantages-list">
+        <li class="first-advantages-item">
+          <img src="http://placehold.it/50x70" width="50" height="70" alt="Домик">
+          <b>Жильё</b>
+          <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+        </li>
+        <li class="first-advantages-item">
+          <img src="http://placehold.it/50x70" width="50" height="70" alt="Бургер">
+          <b>Еда</b>
+          <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+        </li>
+        <li class="first-advantages-item">
+          <img src="http://placehold.it/50x70" width="50" height="70" alt="Подарок">
+          <b>Сувениры</b>
+          <p>Не только китайского, но и местного производства!</p>
+        </li>
+      </ul>
+    </section>
+    <section class="second-advantage">
+      <div class="about-advantage">
+        <h2>Там есть мост Дьявола</h2>
+        <span>№2</span>
+        <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+      </div>
+    </section>
+    <section class="other-advantages">
+      <ul class="other-advantages-list">
+        <li class="other-advantages-item">
+          <h3>Небольшая площадь</h3>
+          <span>№3</span>
+          <p>Все достопримечательности находятся очень близко</p>
+        </li>
+        <li class="other-advantages-item">
+          <h3>Красивая дорога</h3>
+          <span>№4</span>
+          <p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+        </li>
+        <li class="other-advantages-item">
+          <h3>Мало туристов</h3>
+          <span>№5</span>
+          <p>Большинство едет в Гранд-Каньон и толпится там</p>
+        </li>
+      </ul>
+    </section>
+    <section class="finder">
+      <h2>Заинтересовались?</h2>
+      <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <a class="open-form" href="#">Поиск гостиницы в Седоне</a>
+      <form class="find-hotel-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="find-form-item">
+          <label for="checkindate">Дата заезда</label>
+          <input type="date" name="checkindate" id="checkindate">
+          <i class="icon icon-calendar"></i>
+        </p>
+        <p class="find-form-item">
+          <label for="checkoutdate">Дата выезда</label>
+          <input type="date" name="checkoutdate" id="checkoutdate">
+          <i class="icon icon-calendar"></i>
+        </p>
+        <p class="find-form-item">
+          <label for="adultscount">Взрослые</label>
+          <button class="button button-minus">&minus;</button>
+          <input type="number" name="adultscount" id="adultscount" placeholder="2">
+          <button class="button button-plus">+</button>
+        </p>
+        <p class="find-form-item">
+          <label for="kidscount">Дети</label>
+          <button class="button button-minus">&minus;</button>
+          <input type="number" name="kidscount" id="kidscount" placeholder="0">
+          <button class="button button-plus">+</button>
+        </p>
+      </form>
+    </section>
+    <section class="map">
+      <iframe
+      width="1200"
+      height="450"
+      src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJDbBC-TKhLYcR_Y5s-iPFSFU&key=AIzaSyCPx0wdTEhMR_c1UrUcgv9aYSYnjaMcvEQ"
+      allowfullscreen>
+    </iframe>
+  </section>
+</main>
+<footer class="main-footer">
+  <a class="footer-hashtag" href="#">#visitsedona</a>
+  <div class="footer-social">
+    <ul>
+      <li><a class="social-button" href="#">Вконтакте</a></li>
+      <li><a class="social-button" href="#">Фейсбук</a></li>
+      <li><a class="social-button" href="#">Инстаграм</a></li>
+    </ul>
+  </div>
+  <p class="footer-copyright">
+    <b>Web site by</b>
+    <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+  </p>
 
-    </footer>
-  </body>
+</footer>
+</body>
 </html>
