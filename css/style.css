@@ -1,15 +1,16 @@
 body {
-  font-family: "PT Sans "Arial", serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
-  line-height: 26px;
-  font-weight: 400;
+  line-height: 1,85;
   color: black;
 }
 
-h2 {
-  font-family: "PT Sans "Arial", serif;
+.title-main {
   font-size: 21px;
-  line-height: 26px;
-  font-weight: 400;
-  color: black;
+  line-height: 1,23;
+}
+
+.title-secondary {
+  font-size: 12px;
+  line-height: 1,5;
 }
