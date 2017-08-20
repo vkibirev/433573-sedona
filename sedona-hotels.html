@@ -56,17 +56,17 @@
           </li>
         </ul>
       </fieldset>
-      <p>Стоимость услуги в сутки(Р):</p>
-      <div class="price">
-        <input type="number" name="minprice" placeholder="0">
-        <input type="number" name="maxprice" placeholder="3000">
-      </div>
-      <div class="range-price">
+      <fieldset>
+        <legend>Стоимость услуги в сутки(Р):</legend>
+        <output type="number" name="minprice">
+          0
+        </output>
+        <output type="number" name="maxprice">
+          3000
+        </output>
         <input type="range" min="0" max="3000" step="1" name="pricerange">
-      </div>
-      <p>
         <button class="button">Показать</button>
-      </p>
+      </fieldset>
     </form>
     <section class="results">
       <h2 class="visually-hidden">Сортировка результатов</h2>
