@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона Выбор Отеля</title>
   <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
 </head>
 <body>
   <header class="main-header">
@@ -15,11 +17,11 @@
         <li><a href="#">Информация</a></li>
         <li><a href="#">Фото и видео</a></li>
         <li><a href="#">Карта штата</a></li>
-        <li><a href="#">Гостиницы</a></li>
+        <li class="current-page"><a href="#">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
-  <main class="container">
+  <main class="main-hotels">
     <form class="filter" action="https://echo.htmlacademy.ru" method="get">
       <h2 class="visually-hidden">Фильтры выбора жилья</h2>
       <fieldset>
@@ -64,22 +66,22 @@
         <output type="number" name="maxprice">
           3000
         </output>
-        <input type="range" min="0" max="3000" step="1" name="pricerange">        
+        <input type="range" min="0" max="3000" step="1" name="pricerange">
       </fieldset>
-      <button class="button">Показать</button>
+      <button class="button-show">Показать</button>
     </form>
     <section class="results">
       <h2 class="visually-hidden">Сортировка результатов</h2>
       <b class="title-secondary">Найдено: 3</b>
       <p>Сортировка:</p>
       <ul class="filter-results-list">
-        <li class="filter-results-item"><button class="results-button">По цене</button></li>
+        <li class="filter-results-item"><button class="results-button results-button-selected">По цене</button></li>
         <li class="filter-results-item"><button class="results-button">По типу</button></li>
         <li class="filter-results-item"><button class="results-button">По рейтингу</button></li>
       </ul>
       <ul class="sort-buttons">
-        <li class="sort-buttons-item"><button>▲</button></li>
-        <li class="sort-buttons-item"><button>▼</button></li>
+        <li class="sort-buttons-item"><button class="sort-button sort-button-selected">▲</button></li>
+        <li class="sort-buttons-item"><button class="sort-button">▼</button></li>
       </ul>
     </section>
     <section class="hotels">
@@ -90,8 +92,8 @@
           <h3 class="title-secondary">Amara Resort &amp; SPA</h3>
           <span>Гостиница</span>
           <span>от 4000 Р.</span>
-          <a href="#">Подробнее</a>
-          <a href="#">Забронировать</a>
+          <a class="button-blue" href="#">Подробнее</a>
+          <a class="button-brown" href="#">Забронировать</a>
           <span class="rating">Рейтинг 8.5</span>
           <img src="img/star.svg" width="50" height="20" alt="5 звёзд">
         </li>
@@ -100,8 +102,8 @@
           <h3 class="title-secondary">Desert Qual Inn</h3>
           <span>Мотель</span>
           <span>от 3000 Р.</span>
-          <a href="#">Подробнее</a>
-          <a href="#">Забронировать</a>
+          <a class="button-blue" href="#">Подробнее</a>
+          <a class="button-brown" href="#">Забронировать</a>
           <span class="rating">Рейтинг 8.9</span>
           <img src="img/star.svg" width="50" height="20" alt="5 звёзд">
         </li>
@@ -110,8 +112,8 @@
           <h3 class="title-secondary">Villas at Poco Diablo</h3>
           <span>Апартаменты</span>
           <span>от 2000 Р.</span>
-          <a href="#">Подробнее</a>
-          <a href="#">Забронировать</a>
+          <a class="button-blue" href="#">Подробнее</a>
+          <a class="button-brown" href="#">Забронировать</a>
           <span class="rating">Рейтинг 9.2</span>
           <img src="img/star.svg" width="50" height="20" alt="5 звёзд">
         </li>

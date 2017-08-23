@@ -1,7 +1,19 @@
 body {
+  margin: 0;
+  padding: 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
+  font-weight: 400;
+
   line-height: 1.5;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
 }
 
 .title-main {
@@ -22,4 +34,304 @@ body {
 	height: 1px !important;
 	width: 1px !important;
 	overflow: hidden;
+}
+
+.button-blue {
+
+  color: #ffffff;
+
+  background: #81b3d2;
+
+  border: none;
+}
+.button-blue:hover,
+.button-blue:focus {
+  background: #669ec0;
+}
+
+.button-blue:active {
+  background: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-brown {
+  color: #ffffff;
+  background: #766357;
+}
+
+.button-brown:hover,
+.button-brown:focus {
+  background: #604e43;
+}
+
+.button-brown:active {
+  background: #503e33;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 1.85;
+
+  background-color: #ffffff;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+  font-weight: 700;
+}
+
+.site-navigation a:hover {
+  color: #81b3d2;
+}
+
+.site-navigation a:active {
+  opacity: 0.3;
+}
+
+.current-page a{
+  color: #766357;
+}
+
+.advantages h2 {
+  text-align: center;
+}
+
+.reasons-head {
+  font-size: 14px;
+  line-height: 1.85;
+
+  text-align: center;
+}
+
+.about-advantage {
+  color: white;
+  background: #81b3d2;
+}
+
+.first-advantages-list {
+  list-style: none;
+}
+
+.about-second-advantage {
+  color: white;
+  background: #81b3d2;
+
+  text-align: right;
+}
+
+.other-advantages {
+  background: #efefef;
+}
+
+.other-advantages-list {
+  list-style: none;
+}
+
+.finder h2 {
+  font-size: 30px;
+  line-height: 1.2;
+
+  text-align: center;
+}
+
+.finder-hint {
+  font-size: 14;
+  line-height: 1.71;
+
+  text-align: center;
+}
+
+.find-form-item {
+  font-size: 14px;
+  line-height: 1.85;
+  font-weight: 700;
+}
+
+/*не понимаю почему этот селектор не влияет на placeholder внрутри input, которые для указания количества человек */
+.find-form-item input {
+  font: inherit;
+  text-transform: uppercase;
+  background: #f2f2f2;
+
+  border: none;
+}
+
+.find-form-item input:hover {
+  background: #ebebeb;
+}
+
+.find-form-item input:focus {
+  background: #ffffff;
+}
+
+.button-minus,
+.button-plus {
+  font-weight: 700;
+  color: #aaaaaa;
+
+  background: #f2f2f2;
+  border: none;
+}
+
+.button-minus:hover,
+.button-minus:focus,
+.button-plus:hover,
+.button-plus:focus {
+  color: #000000;
+}
+
+.button-minus:active,
+.button-plus:active {
+  color: #82b4d3;
+}
+
+.button-find {
+  font-size: 21px;
+  font-weight: 700;
+
+}
+
+.main-footer {
+  background: #ffffff;
+}
+
+.footer-hashtag {
+  font-size: 21px;
+  line-height: 1.23;
+  font-weight: 700;
+  color: #000000;
+}
+
+.footer-social ul {
+  list-style: none;
+
+  text-align: center;
+}
+
+.social-button {
+  color: #ffffff;
+
+  background: #81b3d2;
+}
+
+.footer-copyright {
+  font-size: 14px;
+  font-weight:  700;
+  line-height: 1.85;
+
+  text-align: right;
+}
+
+.footer-copyright a {
+  font-weight:  400;
+
+  color: #000000;
+}
+
+.filter {
+  background: #000000 url("../img/hotels_back.jpg") top center no-repeat;
+  background-size: 100%;
+
+  color: #ffffff;
+}
+
+.filter fieldset{
+  border: none;
+}
+
+.filter legend {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.31;
+}
+
+.filter ul {
+  list-style: none;
+}
+
+.filter-item input:disabled + label{
+  color: #6a6a6a;
+}
+
+.button-show {
+  font: inherit;
+  font-size: 14px;
+  text-transform: uppercase;
+
+  background: transparent;
+
+  color: #ffffff;
+
+  border: 2px solid #ffffff;
+}
+
+.button-show:hover,
+.button-show:focus {
+  background: #ffffff;
+
+  color: #000000;
+}
+
+.results p {
+  font-weight: 700;
+}
+
+.filter-results-list {
+  list-style: none;
+}
+
+.results-button {
+  font: inherit;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.3);
+  background: transparent;
+
+  border: none;
+  border-bottom: 1px dashed #81b3d2;
+}
+
+.results-button:hover,
+.results-button:focus {
+  color: #81b3d2;
+}
+
+.results-button:active {
+  border: none;
+  color: #000000;
+}
+
+.results-button-selected {
+  border: none;
+  color: #81b3d2;
+}
+
+.sort-buttons {
+  list-style: none;
+}
+
+.sort-button {
+  background: transparent;
+
+  border: none;
+
+  color: #cacaca;
+}
+
+.sort-button:hover,
+.sort-button:focus {
+  color: #000000;
+}
+
+.sort-button:active,
+.sort-button-selected {
+  color: #81b3d2;
+}
+
+.hotels-list {
+  list-style: none;
 }

@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
 </head>
 <body>
   <header class="main-header">
@@ -20,8 +22,8 @@
     </nav>
   </header>
   <main class="container">
+    <!-- Я правильно понимаю, что background-image можно будет добавить, когда будем размечать сетку, чтобы сразу выставить позиционирование элементов относительно этого изображения? -->
     <h1 class="visually-hidden">Welcome to the gorgeous Sedona!</h1>
-    <!-- Если я правильно тебя понял, то блоки с изображениями я удаляю и потом просто их добавлю как фон через CSS-->
     <section class="advantages">
       <h2 class="title-secondary">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h2>
       <p class="reasons-head">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
@@ -48,7 +50,7 @@
       </ul>
     </section>
     <section class="second-advantage">
-      <div class="about-advantage">
+      <div class="about-second-advantage">
         <b class="title-main">Там есть мост Дьявола</b>
         <span>№2</span>
         <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -75,8 +77,8 @@
     </section>
     <section class="finder">
       <h2>Заинтересовались?</h2>
-      <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <a class="open-form title-secondary" href="#">Поиск гостиницы в Седоне</a>
+      <p class="finder-hint">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <a class="open-form-button button-brown title-secondary" href="#"><span class="open-form-button-text">Поиск гостиницы в Седоне</span></a>
       <form class="find-hotel-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="find-form-item">
           <label for="checkindate">Дата заезда</label>
@@ -100,7 +102,7 @@
           <input type="number" name="kidscount" id="kidscount" placeholder="0">
           <button class="button button-plus" type="button">+</button>
         </p>
-          <button class="button button-find title-secondary">Найти</button>
+          <button class="button-blue button-find title-secondary">Найти</button>
       </form>
     </section>
     <section class="map">
