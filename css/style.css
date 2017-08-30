@@ -13,11 +13,10 @@ a {
   text-decoration: none;
 }
 
-/*Класс для бекграунд*/
-.background-image {
-  background: #ffffff url("../img/big_picture.jpg") top center no-repeat;
-  background-size: 100%;
-  padding-bottom: 64.4%;
+.container {
+  width: 1056px;
+  padding: 0 6%;
+  margin: 0 auto;
 }
 
 .title-main {
@@ -81,10 +80,42 @@ a {
   list-style: none;
 }
 
+.main-header-logo {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  z-index: 1;
+}
+
 .main-navigation {
   font-size: 14px;
   line-height: 1.85;
   background-color: #ffffff;
+  text-align: center;
+}
+
+.site-navigation {
+  padding: 0 6%;
+  display: flex;
+  align-items: center;
+}
+
+.site-navigation li {
+  width: 20%;
+  margin: auto;
+}
+
+.site-navigation li:nth-child(1),
+.site-navigation li:nth-child(2){
+  text-align: left;
+}
+
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4){
+  text-align: right;
 }
 
 .site-navigation a {
@@ -104,7 +135,24 @@ a {
   color: #766357;
 }
 
+.background-container {
+  background: #ffffff url("../img/big_picture.jpg") top center no-repeat;
+  background-size: 1056px;
+  background-position: top;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages {
+  background-color: #ffffff;
+  margin-top: 496px;
+}
+
 .advantages h2 {
+  padding-top: 61px;
   text-align: center;
 }
 
@@ -112,21 +160,64 @@ a {
   font-size: 14px;
   line-height: 1.85;
   text-align: center;
+  padding-top: 38px;
+  padding-bottom: 56px;
 }
 
+/*questions here*/
 .about-advantage {
+  padding-top: 41px;
+  padding-bottom: 60px;
+  padding-left: 60px;
+  padding-right: 60px;
   color: white;
   background: #81b3d2 url("../img/city_photo.jpg") right no-repeat;
+  background-size: 800px 256px;
+}
+
+.first-advantages-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.first-advantages-item {
+  width: 272px;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+.first-advantages-item b {
+  margin-bottom: 20px;
 }
 
 .about-second-advantage {
+  padding-top: 60px;
+  padding-bottom: 50px;
   color: white;
   background: #81b3d2 url("../img/canyon.jpg") left no-repeat;
+  background-size: 800px 256px;
   text-align: right;
 }
 
 .other-advantages {
   background-color: #efefef;
+}
+
+.other-advantages-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.other-advantages-item {
+  width: 208px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  text-align: center;
 }
 
 .finder h2 {
@@ -191,7 +282,16 @@ a {
   background-color: #ffffff;
 }
 
+.main-footer .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .footer-hashtag {
+  width: 136px;
+  margin-left: 60px;
+  margin-right: 132px;
   font-size: 21px;
   line-height: 1.23;
   font-weight: 700;
@@ -199,6 +299,9 @@ a {
 }
 
 .footer-social ul {
+  width: 170px;
+  margin-left: 124px;
+  padding: 0;
   text-align: center;
 }
 
@@ -208,6 +311,9 @@ a {
 }
 
 .footer-copyright {
+  margin-left: auto;
+  margin-right: 60px;
+  width: 200px;
   font-size: 14px;
   font-weight:  700;
   line-height: 1.85;
