@@ -1,3 +1,7 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -13,10 +17,30 @@ a {
   text-decoration: none;
 }
 
-.container {
-  width: 1056px;
-  padding: 0 6%;
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
+}
+
+.container,
+.container-no-padding {
+  width: 1200px;
   margin: 0 auto;
+}
+
+.container {
+  padding-left: 72px;
+  padding-right: 72px;
+}
+
+.container.container-no-padding {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .title-main {
@@ -27,16 +51,6 @@ a {
 .title-secondary {
   font-size: 21px;
   line-height: 1.23;
-}
-
-.visually-hidden {
-	position: absolute !important;
-	clip: rect(1px, 1px, 1px, 1px);
-	padding:0 !important;
-	border:0 !important;
-	height: 1px !important;
-	width: 1px !important;
-	overflow: hidden;
 }
 
 .button-main {
@@ -50,8 +64,8 @@ a {
 }
 
 .button-main:active {
-  background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
 }
 
 .button-secondary {
@@ -65,8 +79,8 @@ a {
 }
 
 .button-secondary:active {
-  background-color: #503e33;
   color: rgba(255, 255, 255, 0.7);
+  background-color: #503e33;
 }
 
 .site-navigation,
@@ -80,32 +94,38 @@ a {
   list-style: none;
 }
 
-.main-header-logo {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: 0 auto;
-  z-index: 1;
-}
-
 .main-navigation {
+  margin: 0 auto;
+  position: relative;
   font-size: 14px;
   line-height: 1.85;
   background-color: #ffffff;
-  text-align: center;
 }
 
 .site-navigation {
-  padding: 0 6%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  min-height: 51px;
+}
+
+.main-header-logo {
+  width: 138px;
+  height: 70px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 1;
 }
 
 .site-navigation li {
   width: 20%;
-  margin: auto;
 }
 
 .site-navigation li:nth-child(1),
@@ -117,6 +137,14 @@ a {
 .site-navigation li:nth-child(4){
   text-align: right;
 }
+
+.site-navigation li:nth-child(2) {
+  margin-right: auto;
+}
+
+.site-navigation li:nth-child(3) {
+  margin-left: auto;
+}  /*глянь, пожалуйста, на этот участок, а то на макете расстояние между этими пунктами меню и логотипом больше чем средние расстояния. Можно ли их так реализовать?*/
 
 .site-navigation a {
   color: #000000;
@@ -135,44 +163,49 @@ a {
   color: #766357;
 }
 
-.background-container {
-  background: #ffffff url("../img/big_picture.jpg") top center no-repeat;
-  background-size: 1056px;
-  background-position: top;
-}
-
 .wrapper {
   display: flex;
   flex-direction: column;
 }
 
+.greetings {
+  background: #ffffff url("../img/big_picture.jpg") top center no-repeat;
+  background-size: 1200px;
+  padding-top: 564px;
+}
+
 .advantages {
+  padding-top: 56px;
+  padding-bottom: 51px;
+  text-align: center;
   background-color: #ffffff;
-  margin-top: 496px;
 }
 
 .advantages h2 {
-  padding-top: 61px;
-  text-align: center;
+  margin: 0;
+  padding-left: 25%;
+  padding-right: 25%;
 }
 
 .reasons-head {
+  padding-top: 33px;
   font-size: 14px;
   line-height: 1.85;
-  text-align: center;
-  padding-top: 38px;
-  padding-bottom: 56px;
 }
 
-/*questions here*/
 .about-advantage {
   padding-top: 41px;
   padding-bottom: 60px;
   padding-left: 60px;
-  padding-right: 60px;
+  padding-right: 70%;
+  text-align: center;
   color: white;
   background: #81b3d2 url("../img/city_photo.jpg") right no-repeat;
   background-size: 800px 256px;
+}
+
+.about-advantage span {
+  display: block;
 }
 
 .first-advantages-list {
@@ -196,10 +229,16 @@ a {
 .about-second-advantage {
   padding-top: 60px;
   padding-bottom: 50px;
+  padding-left: 70%;
+  padding-right: 50px;
+  text-align: center;
   color: white;
   background: #81b3d2 url("../img/canyon.jpg") left no-repeat;
   background-size: 800px 256px;
-  text-align: right;
+}
+
+.about-second-advantage span {
+  display: block;
 }
 
 .other-advantages {
@@ -218,6 +257,10 @@ a {
   padding-top: 45px;
   padding-bottom: 45px;
   text-align: center;
+}
+
+.other-advantages-item span {
+  display: block;
 }
 
 .finder h2 {
@@ -279,6 +322,7 @@ a {
 }
 
 .main-footer {
+  margin-top: auto;
   background-color: #ffffff;
 }
 
@@ -311,13 +355,13 @@ a {
 }
 
 .footer-copyright {
+  width: 200px;
   margin-left: auto;
   margin-right: 60px;
-  width: 200px;
+  text-align: right;
   font-size: 14px;
   font-weight:  700;
   line-height: 1.85;
-  text-align: right;
 }
 
 .footer-copyright a {
@@ -326,16 +370,36 @@ a {
 }
 
 .filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
   background: #000000 url("../img/hotels_back.jpg") top center no-repeat;
-  background-size: 100%;
+  background-size: 1200px;
   color: #ffffff;
+  margin-bottom: 28px;
 }
 
-.filter fieldset{
+.filters-list {
+  margin: 0;
+  padding: 0;
+  width: 140px;
+  margin-right: 70px;
+  padding-bottom: 28px;
+  padding-top: 25px;
+}
+
+.wrapper-filter-price {
+  margin-left: auto;
+}
+
+.filter fieldset {
+  padding: 0;
   border: none;
 }
 
 .filter legend {
+  padding-top: 30px;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.31;
@@ -346,6 +410,9 @@ a {
 }
 
 .button-show {
+  margin-right: 90px;
+  margin-left: 80px;
+  text-align: center;
   font-family: inherit;
   font-size: 14px;
   line-height: 1.5;
@@ -362,7 +429,26 @@ a {
 }
 
 .results p {
+  margin: 0;
+  margin-left: 49px;
   font-weight: 700;
+}
+
+.wrapper-filter-results-list {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.filter-results-list {
+  padding: 0;
+  margin: 0;
+  margin-left: 49px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-results-item {
+  margin-left: 30px;
 }
 
 .results-button {
@@ -390,10 +476,14 @@ a {
   color: #81b3d2;
 }
 
-.sort-button {
+.sort-buttons {
+  margin: 0;
+  margin-left: auto;
+}
+.sort-button {  
+  color: #cacaca;
   background-color: transparent;
   border: none;
-  color: #cacaca;
 }
 
 .sort-button:hover,
@@ -404,4 +494,8 @@ a {
 .sort-button:active,
 .sort-button-selected {
   color: #81b3d2;
+}
+
+.hotels-list {
+  padding: 0;
 }

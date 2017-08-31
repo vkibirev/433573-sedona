@@ -9,23 +9,21 @@
 </head>
 <body>
   <header class="main-header">
-    <nav class="main-navigation">
+    <nav class="main-navigation container">
       <a class="main-header-logo">
         <img src="img/logo.png" width="138" height="70" alt="Логотип сайта Седона">
       </a>
-      <div class="container">
-        <ul class="site-navigation">
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li class="current-page"><a href="sedona-hotels.html">Гостиницы</a></li>
-        </ul>
-      </div>
+      <ul class="site-navigation">
+        <li><a href="#">Информация</a></li>
+        <li><a href="#">Фото и видео</a></li>
+        <li><a href="#">Карта штата</a></li>
+        <li class="current-page"><a href="sedona-hotels.html">Гостиницы</a></li>
+      </ul>
     </nav>
   </header>
-  <main class="main-hotels container">
+  <main class="main-hotels">
     <div class="wrapper">
-      <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+      <form class="filter container" action="https://echo.htmlacademy.ru" method="get">
         <h2 class="visually-hidden">Фильтры выбора жилья</h2>
         <fieldset>
           <legend>Инфраструктура:</legend>
@@ -61,33 +59,37 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset>
-          <legend>Стоимость услуги в сутки(Р):</legend>
-          <output type="number" name="minprice">
-            0
-          </output>
-          <output type="number" name="maxprice">
-            3000
-          </output>
-          <input type="range" min="0" max="3000" step="1" name="pricerange">
-        </fieldset>
-        <button class="button-show">Показать</button>
+        <div class="wrapper-filter-price">
+          <fieldset>
+            <legend>Стоимость в сутки(Р):</legend>
+            <output type="number" name="minprice">
+              0
+            </output>
+            <output type="number" name="maxprice">
+              3000
+            </output>
+            <input type="range" min="0" max="3000" step="1" name="pricerange">
+          </fieldset>
+          <button class="button-show">Показать</button>
+        </div>
       </form>
-      <section class="results">
+      <section class="results container">
         <h2 class="visually-hidden">Сортировка результатов</h2>
+        <div class="wrapper-filter-results-list">
         <b class="title-secondary">Найдено: 3</b>
         <p>Сортировка:</p>
-        <ul class="filter-results-list">
-          <li class="filter-results-item"><button class="results-button results-button-selected">По цене</button></li>
-          <li class="filter-results-item"><button class="results-button">По типу</button></li>
-          <li class="filter-results-item"><button class="results-button">По рейтингу</button></li>
-        </ul>
+          <ul class="filter-results-list">
+            <li class="filter-results-item"><button class="results-button results-button-selected">По цене</button></li>
+            <li class="filter-results-item"><button class="results-button">По типу</button></li>
+            <li class="filter-results-item"><button class="results-button">По рейтингу</button></li>
+          </ul>
         <ul class="sort-buttons">
           <li class="sort-buttons-item"><button class="sort-button sort-button-selected" title="По возрастанию">▲</button></li>
           <li class="sort-buttons-item"><button class="sort-button" title="По убыванию">▼</button></li>
         </ul>
+        </div>
       </section>
-      <section class="hotels">
+      <section class="hotels container">
         <h2 class="visually-hidden">Отфильтрованный список жилья</h2>
         <ul class="hotels-list">
           <li class="hotels-lits-item">
@@ -123,7 +125,6 @@
         </ul>
       </section>
     </div>
-
   </main>
   <footer class="main-footer">
     <div class="container">
