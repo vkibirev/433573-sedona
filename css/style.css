@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -9,8 +11,8 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
-  color: #000000;
   text-transform: uppercase;
+  color: #000000;
 }
 
 a {
@@ -29,8 +31,8 @@ a {
 
 .container,
 .container-no-padding {
-  width: 1200px;
   margin: 0 auto;
+  width: 1200px;
 }
 
 .container {
@@ -105,27 +107,28 @@ a {
 .site-navigation {
   margin: 0;
   padding: 0;
-  list-style: none;
+  min-height: 51px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 51px;
+  list-style: none;
 }
 
 .main-header-logo {
-  width: 138px;
-  height: 70px;
   position: absolute;
   top: 0px;
   right: 0px;
   left: 0px;
   margin-right: auto;
   margin-left: auto;
+  width: 138px;
+  height: 70px;
   z-index: 1;
 }
 
 .site-navigation li {
-  width: 20%;
+  width: 25%;
+  margin: 0px;
 }
 
 .site-navigation li:nth-child(1),
@@ -133,22 +136,18 @@ a {
   text-align: left;
 }
 
-.site-navigation li:nth-child(3),
-.site-navigation li:nth-child(4){
+.site-navigation li:nth-child(4),
+.site-navigation li:nth-child(3){
   text-align: right;
 }
 
 .site-navigation li:nth-child(2) {
-  margin-right: auto;
+  margin-right: 75px;
 }
 
-.site-navigation li:nth-child(3) {
-  margin-left: auto;
-}  /*глянь, пожалуйста, на этот участок, а то на макете расстояние между этими пунктами меню и логотипом больше чем средние расстояния. Можно ли их так реализовать?*/
-
 .site-navigation a {
-  color: #000000;
   font-weight: 700;
+  color: #000000;
 }
 
 .site-navigation a:hover {
@@ -163,15 +162,10 @@ a {
   color: #766357;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
 .greetings {
-  background: #ffffff url("../img/big_picture.jpg") top center no-repeat;
+  padding-top: 513px;
+  background: #ffffff url("../img/big_picture.jpg") 0px -51px no-repeat;
   background-size: 1200px;
-  padding-top: 564px;
 }
 
 .advantages {
@@ -187,6 +181,12 @@ a {
   padding-right: 25%;
 }
 
+.advantages p {
+  margin: 0;
+  padding: 0;
+  padding-top: 31px;
+}
+
 .reasons-head {
   padding-top: 33px;
   font-size: 14px;
@@ -194,51 +194,104 @@ a {
 }
 
 .about-advantage {
-  padding-top: 41px;
-  padding-bottom: 60px;
-  padding-left: 60px;
-  padding-right: 70%;
+  padding-left: 63px;
+  padding-right: 72%;
   text-align: center;
   color: white;
   background: #81b3d2 url("../img/city_photo.jpg") right no-repeat;
   background-size: 800px 256px;
 }
 
+.about-advantage b {
+  display: block;
+  padding-left: 69px;
+  padding-right: 81px;
+  padding-top: 49px;
+}
+
 .about-advantage span {
+  padding-top: 25px;
+  padding-bottom: 21px;
   display: block;
 }
 
-.first-advantages-list {
-  padding: 0;
+.about-advantage p {
   margin: 0;
+  padding: 0;
+  padding-bottom: 56px;
+}
+
+.first-advantages-list {
+  margin: 0;
+  padding: 0;
+  padding-left: 65px;
+  padding-right: 62px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .first-advantages-item {
+  padding-top: 165px;
+  padding-bottom: 78px;
   width: 272px;
   text-align: center;
-  padding-top: 60px;
-  padding-bottom: 50px;
 }
 
 .first-advantages-item b {
   margin-bottom: 20px;
 }
 
+.first-advantages-item p {
+  margin: 0;
+  padding: 0;
+  padding-top: 21px;
+}
+
+.first-advantages-item:nth-child(1) {
+  background-image: url("../img/icon_home.svg");
+  background-repeat: no-repeat;
+  background-position: 98px 64px;
+  background-size: 75px 72px;
+}
+
+.first-advantages-item:nth-child(2) {
+  background-image: url("../img/icon_food.svg");
+  background-repeat: no-repeat;
+  background-position: 93px 65px;
+}
+
+.first-advantages-item:nth-child(3) {
+  background-image: url("../img/icon_gift.svg");
+  background-repeat: no-repeat;
+  background-position: 103px 60px;
+}
+
 .about-second-advantage {
-  padding-top: 60px;
-  padding-bottom: 50px;
-  padding-left: 70%;
-  padding-right: 50px;
+  padding-left: 72%;
+  padding-right: 63px;
   text-align: center;
   color: white;
   background: #81b3d2 url("../img/canyon.jpg") left no-repeat;
   background-size: 800px 256px;
 }
 
-.about-second-advantage span {
+.about-second-advantage b {
   display: block;
+  padding-right: 59px;
+  padding-left: 63px;
+  padding-top: 49px;
+}
+
+.about-second-advantage span {
+  padding-top: 25px;
+  padding-bottom: 21px;
+  display: block;
+}
+
+.about-second-advantage p {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 56px;
 }
 
 .other-advantages {
@@ -253,19 +306,64 @@ a {
 }
 
 .other-advantages-item {
+  padding-top: 50px;
+  padding-bottom: 51px;
   width: 208px;
-  padding-top: 45px;
-  padding-bottom: 45px;
   text-align: center;
+}
+
+.other-advantages-item b {
+  display: block;
+  padding-left: 61px;
+  padding-right: 63px;
+}
+
+.other-advantages-item span {
+  padding-top: 25px;
+  padding-bottom: 21px;
+}
+
+.other-advantages-item p {
+  padding: 0;
+  margin: 0;
 }
 
 .other-advantages-item span {
   display: block;
 }
 
-.finder h2 {
+.finder {
+  padding-top: 32px;
+}
+
+.finder-header-wrapper {
+  margin: 0;
+  padding: 25px 311px 48px 311px;
+}
+
+.finder-header-wrapper h2 {
+  margin: 0;
+  padding: 0;
   font-size: 30px;
   line-height: 1.2;
+  text-align: center;
+}
+
+.finder-header-wrapper p {
+  margin: 0;
+  padding: 0;
+  padding-top: 26px;
+}
+
+.open-form-button {
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 568px;
   text-align: center;
 }
 
@@ -273,6 +371,11 @@ a {
   font-size: 14px;
   line-height: 1.71;
   text-align: center;
+}
+
+.find-hotel-form {
+  margin: 0 auto;
+  width: 568px;
 }
 
 .find-form-item {
@@ -333,9 +436,9 @@ a {
 }
 
 .footer-hashtag {
-  width: 136px;
   margin-left: 60px;
   margin-right: 132px;
+  width: 136px;
   font-size: 21px;
   line-height: 1.23;
   font-weight: 700;
@@ -343,9 +446,9 @@ a {
 }
 
 .footer-social ul {
-  width: 170px;
   margin-left: 124px;
   padding: 0;
+  width: 170px;
   text-align: center;
 }
 
@@ -355,13 +458,13 @@ a {
 }
 
 .footer-copyright {
-  width: 200px;
   margin-left: auto;
   margin-right: 60px;
-  text-align: right;
+  width: 200px;
   font-size: 14px;
   font-weight:  700;
   line-height: 1.85;
+  text-align: right;
 }
 
 .footer-copyright a {
@@ -370,23 +473,24 @@ a {
 }
 
 .filter {
+  margin-bottom: 28px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-content: center;
-  background: #000000 url("../img/hotels_back.jpg") top center no-repeat;
+  background: #86a3c3 url("../img/hotels_back.jpg") top center no-repeat;
   background-size: 1200px;
   color: #ffffff;
-  margin-bottom: 28px;
+  min-height: 222px;
 }
 
 .filters-list {
   margin: 0;
   padding: 0;
-  width: 140px;
-  margin-right: 70px;
+  margin-right: 110px;
   padding-bottom: 28px;
-  padding-top: 25px;
+  padding-top: 28px;
+  width: 140px;
 }
 
 .wrapper-filter-price {
@@ -428,23 +532,30 @@ a {
   color: #000000;
 }
 
-.results p {
-  margin: 0;
-  margin-left: 49px;
-  font-weight: 700;
-}
-
 .wrapper-filter-results-list {
   display: flex;
   justify-content: flex-start;
 }
 
-.filter-results-list {
-  padding: 0;
+.wrapper-filter-results-list p {
   margin: 0;
   margin-left: 49px;
+  padding-top: 7px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.filter-results-list {
   display: flex;
   justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  margin-left: 9px;
+  padding-top: 7px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
 }
 
 .filter-results-item {
@@ -480,7 +591,7 @@ a {
   margin: 0;
   margin-left: auto;
 }
-.sort-button {  
+.sort-button {
   color: #cacaca;
   background-color: transparent;
   border: none;
@@ -498,4 +609,53 @@ a {
 
 .hotels-list {
   padding: 0;
+  margin: 0;
+}
+
+.hotels-list-item {
+  padding: 30px 0px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.hotels-list-item img{
+  padding-top: 10px;
+}
+
+.hotels-list-item h3 {
+  transform: translate(165px, -108px);
+}
+
+.hotel-type {
+  display: block;
+  transform: translate(165px, -120px);
+}
+
+.hotel-price {
+  display: block;
+  transform: translate(281px, -140px);
+}
+
+.detail {
+  display: block;
+  width: 110px;
+  text-align: center;
+  transform: translate(165px, -124px);
+}
+
+.book {
+  display: block;
+  width: 142px;
+  transform: translate(282px, -145px);
+  text-align: center;
+}
+
+.rating {
+  display: block;
+  transform: translate(963px, -165px);
+}
+
+.rating-star {
+  display: block;
+  transform: translate(1023px, -261px);
 }
