@@ -150,11 +150,11 @@ a {
   color: #000000;
 }
 
-.site-navigation a:hover a:not(.current-page) {
+.site-navigation li:not(.current-page) a:hover {
   color: #81b3d2;
 }
 
-.site-navigation a:active a:not(.current-page){
+.site-navigation li:not(.current-page) a:active{
   opacity: 0.3;
 }
 
