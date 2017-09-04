@@ -447,6 +447,7 @@ a {
 .footer-hashtag {
   margin-left: 60px;
   margin-right: 132px;
+  padding-top: 11px;
   width: 136px;
   font-size: 21px;
   line-height: 1.23;
@@ -455,21 +456,44 @@ a {
 }
 
 .footer-social ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-left: 124px;
   padding: 0;
-  width: 170px;
+  padding-top: 19px;
+  width: 150px;
   text-align: center;
 }
 
 .social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 48px;
   color: #ffffff;
   background-color: #81b3d2;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #669fc1;
+}
+
+.social-button:active {
+  background-color: #5497be;
+}
+
+.social-button:active path {
+  fill: #88b6d2;
 }
 
 .footer-copyright {
   display: flex;
   margin-left: auto;
-  margin-right: 21px;
+  margin-right: 29px;
+  padding-top: 28px;
   width: 200px;
   font-size: 14px;
   line-height: 1.85;
@@ -490,6 +514,15 @@ a {
 .footer-copyright svg {
   width: 113px;
   height: 41px;
+}
+
+.footer-copyright a:hover path,
+.footer-copyright a:focus path {
+  fill: #82b4d3;
+}
+
+.footer-copyright a:active path {
+  fill: #c2c0c1;
 }
 
 .filter {
@@ -513,8 +546,131 @@ a {
   width: 140px;
 }
 
-.wrapper-filter-price {
+.filter-range {
   margin-left: auto;
+  padding-top: 32px;
+  width: 318px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+  height: 36px;
+  margin-bottom: 20px;
+  font-size: 0;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  display: inline-flex;
+  align-items: center;
+  width: 90px;
+}
+
+.price-controls .min-price {
+  padding-left: 66px;
+}
+
+.price-controls .max-price {
+  padding-left: 121px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -7px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 30px;
+  width: 137px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+  background: #ffffff;
 }
 
 .filter fieldset {
