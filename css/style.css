@@ -563,6 +563,8 @@ a {
 
 .price-controls {
   position: relative;
+  display: flex;
+  align-content: center;
   height: 36px;
   margin-bottom: 20px;
   font-size: 0;
@@ -605,8 +607,9 @@ a {
 }
 
 .price-controls input {
-  width: 50px;
   margin: 0;
+  padding-left: 1px;
+  width: 50px;
   color: inherit;
   font: inherit;
   background: none;
@@ -635,7 +638,7 @@ a {
   width: 4px;
   height: 4px;
   background: #ababab;
-  border: 8px solid #ffffff;
+  border: 9px solid #ffffff;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
