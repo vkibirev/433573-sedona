@@ -13,6 +13,9 @@ body {
   line-height: 1.5;
   text-transform: uppercase;
   color: #000000;
+  background-color: #f3f3f3;
+  background-size: 100%;
+
 }
 
 a {
@@ -33,6 +36,10 @@ a {
 .container-no-padding {
   margin: 0 auto;
   width: 1200px;
+  background-color: #ffffff;
+  box-shadow:
+    4px 0 20px -10px #333,
+    -4px 0 20px -10px #333;
 }
 
 .container {
@@ -44,6 +51,8 @@ a {
   padding-left: 0;
   padding-right: 0;
 }
+
+
 
 .title-main {
   font-size: 21px;
@@ -548,7 +557,6 @@ a {
 }
 
 .filter {
-  margin-bottom: 28px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -731,6 +739,10 @@ a {
 .button-show:focus {
   background-color: #ffffff;
   color: #000000;
+}
+
+.results {
+  padding-top: 29px
 }
 
 .wrapper-filter-results-list {
