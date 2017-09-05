@@ -345,6 +345,7 @@ a {
 }
 
 .finder {
+  position: relative;
   padding-top: 32px;
 }
 
@@ -388,11 +389,18 @@ a {
 }
 
 .find-hotel-form {
-  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  margin-left: -285px;
   width: 568px;
+  background-color: #ffffff;
+  z-index: 2;
 }
 
 .find-form-item {
+  margin: 0;
+  padding: 0;
+  font: inherit;
   font-size: 14px;
   line-height: 1.85;
   font-weight: 700;
@@ -413,12 +421,96 @@ a {
   background-color: #ffffff;
 }
 
+.dates-wrapper {
+
+  padding: 55px 55px 32px 55px;
+}
+
+.find-form-item:nth-child(1),
+.find-form-item:nth-child(2) {
+  position: relative;
+}
+
+.checkindate-input,
+.checkoutdate-input {
+  padding-left: 13px;
+  padding-top: 8px;
+  padding-bottom: 6px;
+  width: 346px;
+}
+
+.icon-calendar {
+  position: absolute;
+  display: inline-block;
+  top: 9px;
+  right: 8px;
+  width: 21px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.icon-calendar path {
+  fill: #cbcbcb;
+}
+
+.icon-calendar:hover path,
+.icon-calendar:focus path {
+  fill: #000000;
+}
+
+.icon-calendar:active path {
+  fill: #82b4d3;
+}
+
+.checkindate-input {
+  margin-bottom: 26px;
+  margin-left: 20px;
+}
+
+.checkoutdate-input {
+  margin-left: 16px;
+}
+
+.persons-wrapper {
+  display: flex;
+  padding-bottom: 54px;
+}
+
+.adultscount-input,
+.kidscount-input {
+  width: 38px;
+  height: 38px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.adultscount-label {
+  padding-right: 36px;
+  padding-left: 54px;
+}
+
+.kidscount-label {
+  padding-right: 22px;
+  padding-left: 48px;
+}
+
 .button-minus,
 .button-plus {
+  width: 38px;
+  height: 38px;
   font-weight: 700;
   color: #aaaaaa;
   background-color: #f2f2f2;
   border: none;
+  vertical-align: middle;
+}
+
+.button-minus {
+  transform: translate(4px, 0px);
+}
+
+.button-plus {
+  transform: translate(-4px, 0px);
 }
 
 .button-minus:hover,
@@ -434,15 +526,22 @@ a {
 }
 
 .button-find {
+  margin-left: 55px;
+  margin-bottom: 55px;
+  padding-top: 14px;
+  padding-bottom: 18px;
+  width: 458px;
   font-size: 21px;
   font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .map {
   position: relative;
   display: flex;
   flex-direction: column;
-  min-height: 470px;
+  min-height: 592px;
 }
 
 .map iframe {
