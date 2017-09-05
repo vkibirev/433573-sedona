@@ -795,6 +795,9 @@ a {
   margin-left: auto;
 }
 .sort-button {
+  padding: 0;
+  padding-left: 7px;
+  padding-top: 6px;
   color: #cacaca;
   background-color: transparent;
   border: none;
@@ -860,7 +863,28 @@ a {
 }
 
 .rating-hotel-wrapper .rating-star {
-  margin-bottom: 39px;
+  display: flex;
+  margin-bottom: 46px;
+  background-image: url("../img/star.svg");
+  background-repeat: space;
+}
+
+.star4 {
+  width: 86px;
+  height: 17px;
+  transform: translate(21px, 3px);
+}
+
+.star3 {
+  width: 61px;
+  height: 17px;
+  transform: translate(46px, 3px);
+}
+
+.star2 {
+  width: 39px;
+  height: 17px;
+  transform: translate(69px, 3px);
 }
 
 .rating-hotel-wrapper .rating {
