@@ -397,6 +397,10 @@ a {
   z-index: 2;
 }
 
+.find-hotel-form-close {
+  display: none;
+}
+
 .find-form-item {
   margin: 0;
   padding: 0;
