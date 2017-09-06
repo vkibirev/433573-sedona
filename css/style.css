@@ -672,14 +672,23 @@ a {
 .filters-list {
   margin: 0;
   padding: 0;
-  margin-right: 110px;
-  padding-bottom: 28px;
-  padding-top: 28px;
+  margin-right: 114px;
+  padding-top: 26px;
   width: 140px;
+}
+
+.filters-list label {
+  vertical-align: top;
+  padding-left: 14px;
+  cursor: pointer;
 }
 
 .filter-item {
   display: inline-block;
+}
+
+.filter-item:not(:last-child) {
+  padding-bottom: 17px;
 }
 
 input[type="checkbox"] {
@@ -692,6 +701,7 @@ input[type="checkbox"] + label::before {
   width: 23px;
   height: 23px;
   background-image: url("../img/checkbox-off.svg");
+  transform: translateX(-13px);
 }
 
 input[type="checkbox"]:checked + label::before {
@@ -793,7 +803,7 @@ input[type="checkbox"]:checked + label::before {
   top: -7px;
   width: 4px;
   height: 4px;
-  background: #ababab;
+  background-color: #ababab;
   border: 9px solid #ffffff;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
@@ -801,7 +811,8 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .range-toggle:hover {
-  background: #1c4f80;
+  border: 10px solid #ffffff;
+  background-color: #1c4f80;
 }
 
 .range-toggle-min {
@@ -814,8 +825,8 @@ input[type="checkbox"]:checked + label::before {
 
 .btn-transparent {
   display: block;
-  margin: 0 auto;
   padding: 6px 30px;
+  margin-left: 86px;
   width: 137px;
   font-size: 14px;
   line-height: 20px;
@@ -834,6 +845,7 @@ input[type="checkbox"]:checked + label::before {
 
 .filter fieldset {
   padding: 0;
+  margin: 0;
   border: none;
 }
 
@@ -984,15 +996,17 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .info-hotel-wrapper .hotels-buttons {
-  padding-top: 17px;
+  padding-top: 13px;
 }
 
 .hotels-buttons .detail {
-  padding: 5px 17px;
+  display: inline-block;
+  padding: 3px 17px;
 }
 
 .hotels-buttons .book {
-  padding: 5px 17px;
+  display: inline-block;
+  padding: 3px 18px;
 }
 
 .rating-hotel-wrapper {
@@ -1008,21 +1022,21 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .star4 {
-  width: 86px;
+  width: 85px;
   height: 17px;
-  transform: translate(21px, 3px);
+  transform: translate(23px, 3px);
 }
 
 .star3 {
   width: 61px;
   height: 17px;
-  transform: translate(46px, 3px);
+  transform: translate(47px, 3px);
 }
 
 .star2 {
   width: 39px;
   height: 17px;
-  transform: translate(69px, 3px);
+  transform: translate(70px, 3px);
 }
 
 .rating-hotel-wrapper .rating {
