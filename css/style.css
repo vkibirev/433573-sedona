@@ -107,6 +107,7 @@ a {
 
 .main-navigation {
   margin: 0 auto;
+  padding-bottom: 5px;
   position: relative;
   font-size: 14px;
   line-height: 1.85;
@@ -172,8 +173,8 @@ a {
 }
 
 .greetings {
-  padding-top: 513px;
-  background: #ffffff url("../img/big_picture.jpg") 0px -51px no-repeat;
+  padding-top: 508px;
+  background: #ffffff url("../img/big_picture.jpg") 0px -56px no-repeat;
   background-size: 1200px;
 }
 
@@ -188,6 +189,7 @@ a {
   margin: 0;
   padding-left: 25%;
   padding-right: 25%;
+  padding-top: 4px;
 }
 
 .advantages p {
@@ -204,7 +206,8 @@ a {
 
 .about-advantage {
   padding-left: 63px;
-  padding-right: 72%;
+  padding-right: 71%;
+  min-height: 255px;
   text-align: center;
   color: white;
   background: #81b3d2 url("../img/city_photo.jpg") right no-repeat;
@@ -213,14 +216,15 @@ a {
 
 .about-advantage b {
   display: block;
-  padding-left: 69px;
-  padding-right: 81px;
-  padding-top: 49px;
+  padding-left: 77px;
+  padding-right: 85px;
+  padding-top: 46px;
 }
 
 .about-advantage span {
   padding-top: 25px;
   padding-bottom: 21px;
+  padding-right: 9px;
   display: block;
 }
 
@@ -228,21 +232,22 @@ a {
   margin: 0;
   padding: 0;
   padding-bottom: 56px;
+  padding-right: 5px;
 }
 
 .first-advantages-list {
   margin: 0;
   padding: 0;
-  padding-left: 65px;
-  padding-right: 62px;
+  padding-left: 56px;
+  padding-right: 57px;
   display: flex;
   justify-content: space-between;
 }
 
 .first-advantages-item {
-  padding-top: 165px;
-  padding-bottom: 78px;
-  width: 272px;
+  padding-top: 161px;
+  padding-bottom: 82px;
+  width: 286px;
   text-align: center;
 }
 
@@ -253,30 +258,31 @@ a {
 .first-advantages-item p {
   margin: 0;
   padding: 0;
-  padding-top: 21px;
+  padding-top: 20px;
 }
 
 .first-advantages-item:nth-child(1) {
   background-image: url("../img/icon_home.svg");
   background-repeat: no-repeat;
-  background-position: 98px 64px;
+  background-position: 106px 61px;
   background-size: 75px 72px;
 }
 
 .first-advantages-item:nth-child(2) {
   background-image: url("../img/icon_food.svg");
   background-repeat: no-repeat;
-  background-position: 93px 65px;
+  background-position: 101px 61px;
 }
 
 .first-advantages-item:nth-child(3) {
   background-image: url("../img/icon_gift.svg");
   background-repeat: no-repeat;
-  background-position: 103px 60px;
+  background-position: 111px 57px;
 }
 
 .about-second-advantage {
-  padding-left: 71%;
+  padding-left: 70%;
+  min-height: 256px;
   text-align: center;
   color: white;
   background: #81b3d2 url("../img/canyon.jpg") left no-repeat;
@@ -286,15 +292,15 @@ a {
 .about-second-advantage b {
   display: block;
   padding-right: 124px;
-  padding-left: 73px;
-  padding-top: 49px;
+  padding-left: 85px;
+  padding-top: 46px;
 }
 
 .about-second-advantage span {
   display: block;
-  padding-top: 25px;
+  padding-top: 24px;
   padding-bottom: 21px;
-  padding-right: 51px;
+  padding-right: 39px;
 }
 
 .about-second-advantage p {
@@ -302,7 +308,7 @@ a {
   width: 334px;
   margin: 0;
   padding: 0;
-  padding-right: 32px;
+  padding-right: 14px;
   padding-bottom: 56px;
 }
 
@@ -318,8 +324,8 @@ a {
 }
 
 .other-advantages-item {
-  padding-top: 50px;
-  padding-bottom: 51px;
+  padding-top: 47px;
+  padding-bottom: 58px;
   width: 261px;
   text-align: center;
 }
@@ -351,7 +357,7 @@ a {
 
 .finder-header-wrapper {
   margin: 0;
-  padding: 25px 311px 48px 311px;
+  padding: 19px 311px 48px 311px;
 }
 
 .finder-header-wrapper h2 {
@@ -379,6 +385,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   width: 568px;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -563,7 +570,7 @@ a {
   margin-top: auto;
   padding-left: 72px;
   padding-right: 72px;
-  min-height: 115px;
+  min-height: 119px;
   text-align: center;
   background-color: rgba(255,255,255,0.9);
 }
@@ -584,7 +591,6 @@ a {
 .footer-hashtag {
   margin-left: 60px;
   margin-right: 132px;
-  padding-top: 11px;
   width: 136px;
   font-size: 21px;
   line-height: 1.23;
@@ -598,7 +604,6 @@ a {
   justify-content: space-between;
   margin-left: 124px;
   padding: 0;
-  padding-top: 19px;
   width: 150px;
   text-align: center;
 }
@@ -630,7 +635,7 @@ a {
   display: flex;
   margin-left: auto;
   margin-right: 29px;
-  padding-top: 28px;
+  padding-top: 9px;
   width: 200px;
   font-size: 14px;
   line-height: 1.85;
@@ -639,7 +644,7 @@ a {
 
 .footer-copyright b {
   padding-top: 6px;
-  padding-right: 8px;
+  padding-right: 11px;
   font-weight: 400;
 }
 
@@ -670,7 +675,7 @@ a {
   background: #86a3c3 url("../img/hotels_back.jpg") top center no-repeat;
   background-size: 1200px;
   color: #ffffff;
-  min-height: 222px;
+  min-height: 217px;
 }
 
 .filters-list {
