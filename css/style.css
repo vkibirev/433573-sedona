@@ -32,14 +32,19 @@ a {
 	overflow: hidden;
 }
 
+.shadow {
+  margin: 0 auto;
+  width: 1200px;
+  box-shadow:
+    4px 2px 15px -9px #000101,
+    -4px 2px 15px -9px #000101;
+}
+
 .container,
 .container-no-padding {
   margin: 0 auto;
   width: 1200px;
   background-color: #ffffff;
-  box-shadow:
-    4px 2px 13px -9px #000101,
-    -4px 2px 13px -9px #000101;
 }
 
 .container {
@@ -50,6 +55,7 @@ a {
 .container.container-no-padding {
   padding-left: 0;
   padding-right: 0;
+
 }
 
 
