@@ -486,6 +486,15 @@ a {
   cursor: pointer;
 }
 
+/*for IE11*/
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+  .icon-calendar svg {
+
+    pointer-events: none;
+  }
+}
+
 .icon-calendar path {
   fill: #cbcbcb;
 }
