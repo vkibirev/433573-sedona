@@ -114,6 +114,11 @@ a {
   background-color: #ffffff;
 }
 
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+.site-navigation {height: 51px;}
+}
+
 .site-navigation {
   margin: 0;
   padding: 0;
@@ -548,6 +553,12 @@ a {
   text-align: center;
 }
 
+/*For IE11*/
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+.map {height: 592px;}
+}
+
 .map {
   position: relative;
   display: flex;
@@ -749,8 +760,8 @@ input[type="checkbox"]:checked + label::before {
 
 .price-controls {
   position: relative;
-  display: flex;
-  align-content: center;
+  display: inline-block;
+  width: 318px;
   height: 36px;
   margin-bottom: 20px;
   font-size: 0;
@@ -770,32 +781,34 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .price-controls label {
-  display: inline-block;
   font-size: 14px;
-  line-height: 38px;
-  vertical-align: top;
+  line-height: 32px;
   cursor: pointer;
 }
 
 .price-controls .min-price,
 .price-controls .max-price {
-  display: inline-flex;
-  align-items: center;
-  width: 90px;
+  display: inline-block;
 }
 
 .price-controls .min-price {
-  padding-left: 66px;
+  padding-left: 65px;
 }
 
 .price-controls .max-price {
-  padding-left: 121px;
+  padding-left: 86px;
+}
+
+/*For IE11*/
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+.price-controls input {height: 32px;}
 }
 
 .price-controls input {
+  padding: 0;/*temporary*/
   margin: 0;
-  padding-left: 1px;
-  width: 50px;
+  width: 40px;
   color: inherit;
   font: inherit;
   background: none;
@@ -1017,6 +1030,7 @@ input[type="checkbox"]:checked + label::before {
 
 .info-hotel-wrapper .hotels-buttons {
   padding-top: 14px;
+  width: 262px;
 }
 
 .hotels-buttons .detail {
