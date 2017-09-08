@@ -749,6 +749,12 @@ input[type="checkbox"]:checked + label::before {
   background-image: url("../img/checkbox-on.svg");
 }
 
+input[type="checkbox"]:disabled,
+input[type="checkbox"]:disabled + label {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
 .filter-range {
   margin-left: auto;
   padding-top: 28px;
