@@ -22,6 +22,7 @@ a {
   text-decoration: none;
 }
 
+
 /* reason for !important: vendor class */
 .visually-hidden {
 	position: absolute !important;
@@ -56,10 +57,7 @@ a {
 .container.container-no-padding {
   padding-left: 0;
   padding-right: 0;
-
 }
-
-
 
 .title-main {
   font-size: 21px;
@@ -120,7 +118,7 @@ a {
   line-height: 1.85;
   background-color: #ffffff;
 }
-
+/*for IE11*/
 @media all and (-ms-high-contrast: none),
 (-ms-high-contrast: active) {
 .site-navigation {height: 51px;}
@@ -579,7 +577,15 @@ a {
 /*For IE11*/
 @media all and (-ms-high-contrast: none),
 (-ms-high-contrast: active) {
-.map {height: 592px;}
+  .checkindate-input,
+  .checkoutdate-input {
+    width: 343px;
+    padding-bottom: 15px;
+  }
+  .kidscount-label {
+    padding-right: 18px;
+  }
+  .map {height: 592px;}
 }
 
 .map {
