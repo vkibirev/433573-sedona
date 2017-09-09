@@ -21,7 +21,6 @@ a {
   text-decoration: none;
 }
 
-
 /* reason for !important: vendor class */
 .visually-hidden {
 	position: absolute !important;
@@ -526,7 +525,6 @@ a {
   width: 38px;
   height: 38px;
   text-align: center;
-  vertical-align: middle;
 }
 
 .adultscount-label {
@@ -547,7 +545,6 @@ a {
   color: #aaaaaa;
   background-color: #f2f2f2;
   border: none;
-  vertical-align: middle;
 }
 
 .button-minus {
@@ -556,6 +553,17 @@ a {
 
 .button-plus {
   transform: translate(-4px, 0px);
+}
+
+/*For IE11*/
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+  .adultscount-input,
+  .kidscount-input,
+  .button-minus,
+  .button-plus {
+  vertical-align: middle;
+  }
 }
 
 .button-minus:hover,
@@ -613,7 +621,7 @@ a {
 .main-footer {
   display: flex;
   position: relative;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin-top: auto;
   padding-left: 72px;
@@ -632,7 +640,7 @@ a {
 
 .second-footer .wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   padding-left: 72px;
   padding-right: 72px;
@@ -640,7 +648,6 @@ a {
 
 .footer-hashtag {
   margin-left: 60px;
-  margin-right: 132px;
   width: 136px;
   font-size: 21px;
   line-height: 1.23;
@@ -653,7 +660,8 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
-  margin-left: 124px;
+  margin-left: 256px;
+  margin-right: 228px;
   padding: 0;
   width: 150px;
   text-align: center;
@@ -669,8 +677,7 @@ a {
   background-color: #81b3d2;
 }
 
-.social-button:hover,
-.social-button:focus {
+.social-button:hover {
   background-color: #669fc1;
 }
 
@@ -685,8 +692,7 @@ a {
 .footer-copyright {
   display: flex;
   margin: 0;
-  margin-left: auto;
-  margin-right: 27px;
+  margin-right: 24px;
   padding-top: 7px;
   width: 200px;
   font-size: 14px;
@@ -1020,6 +1026,7 @@ input[type="checkbox"]:disabled + label {
   margin: 0;
   margin-left: auto;
 }
+
 .sort-button {
   padding: 0;
   padding-left: 7px;
